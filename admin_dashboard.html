@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png" />
+    <link rel="stylesheet" href="Styles/admin_dashboard.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Admin Panel</h2>
+      <a href="add_student.html">Add Student</a>
+      <a href="#delete-student">Delete Student</a>
+      <a href="#update-student">Update Student</a>
+      <a href="#add-grade">Add Grade</a>
+      <a href="#add-course">Add Course</a>
+      <a href="#search-student">Search Student</a>
+      <a href="#view-students">Show Students</a>
+      <a href="#view-grades">View Grades</a>
+      <a href="#view-courses">View Courses</a>
+      <button
+        class="logout-btn"
+        onclick="location.href='index.html'"
+        style="margin-top: 20px; width: 100%"
+      >
+        Logout
+      </button>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <h1>Dashboard Overview</h1>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3>Total Students</h3>
+          <p>125</p>
+        </div>
+        <div class="card">
+          <h3>Active Courses</h3>
+          <p>15</p>
+        </div>
+        <div class="card">
+          <h3>Recent Activities</h3>
+          <p>5 new grades added</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

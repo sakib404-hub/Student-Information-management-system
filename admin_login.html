@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Login page</title>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png" />
+    <link rel="stylesheet" href="Styles/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin Login</h1>
+      <!-- <div class="demo-credentials">
+        <strong>Demo Credentials:</strong><br />
+        Username: sakib404-hub<br />
+        Password: 26297@kib
+      </div> -->
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="username" required />
+          <div id="usernameError" class="error-message">Invalid username</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <div id="passwordError" class="error-message">Invalid password</div>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+
+    <script>
+      // Remove the default values when the user starts typing
+      document
+        .getElementById("username")
+        .addEventListener("focus", function () {
+          if (this.value === "sakib404-hub") this.value = "";
+        });
+
+      document
+        .getElementById("password")
+        .addEventListener("focus", function () {
+          if (this.value === "26297@kib") this.value = "";
+        });
+
+      // Form validation
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent form submission
+
+          // Get input values
+          const username = document.getElementById("username").value.trim();
+          const password = document.getElementById("password").value.trim();
+
+          // Get error elements
+          const usernameError = document.getElementById("usernameError");
+          const passwordError = document.getElementById("passwordError");
+
+          // Reset error messages
+          usernameError.style.display = "none";
+          passwordError.style.display = "none";
+
+          // Validate credentials
+          let isValid = true;
+
+          if (username !== "sakib404-hub") {
+            usernameError.style.display = "block";
+            isValid = false;
+          }
+
+          if (password !== "26297@kib") {
+            passwordError.style.display = "block";
+            isValid = false;
+          }
+
+          // If valid, redirect to dashboard
+          if (isValid) {
+            window.location.href = "admin_dashboard.html";
+          }
+        });
+    </script>
+  </body>
+</html>
