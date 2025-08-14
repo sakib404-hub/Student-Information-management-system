@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-50 via-gray-100 to-blue-100 font-sans min-h-screen flex flex-col"
+  >
+    <!-- Header -->
+    <header
+      class="bg-blue-700 text-white py-5 shadow-lg text-center text-xl font-semibold"
+    >
+      🎓 Student Information Management System - Dashboard
+    </header>
+
+    <!-- Search Section -->
+    <section class="bg-white/80 py-6 px-8 shadow-md">
+      <div class="max-w-4xl mx-auto">
+        <label
+          for="search"
+          class="block text-lg font-semibold text-blue-700 mb-2"
+          >🔍 Search Students</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="search"
+            placeholder="Enter name or roll number..."
+            class="w-full px-5 py-3 rounded-full border border-blue-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main
+      class="flex-1 max-w-6xl mx-auto p-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      <!-- Cards -->
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">
+          📋 View Personal Info
+        </h3>
+        <p class="text-gray-600">
+          Check your personal details and update your profile.
+        </p>
+      </div>
+
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">
+          📊 View Academic Info (CGPA)
+        </h3>
+        <p class="text-gray-600">
+          Track your academic progress and GPA details.
+        </p>
+      </div>
+
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">📝 View Grades</h3>
+        <p class="text-gray-600">
+          See your results and grades for each course.
+        </p>
+      </div>
+
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">📅 View Attendance</h3>
+        <p class="text-gray-600">
+          Monitor your attendance percentage by subject.
+        </p>
+      </div>
+
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">🔍 Search Students</h3>
+        <p class="text-gray-600">
+          Find students by name or registration number.
+        </p>
+      </div>
+
+      <div
+        class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 cursor-pointer"
+      >
+        <h3 class="text-lg font-bold text-blue-700 mb-2">
+          🏫 View Students by Course / Department
+        </h3>
+        <p class="text-gray-600">
+          Browse student lists by course or department.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-blue-700 text-white text-center py-3 text-sm shadow-inner"
+    >
+      © 2025 SIMS
+    </footer>
+  </body>
+</html>
